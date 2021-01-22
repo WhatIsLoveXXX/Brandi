@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: $main-blueColor;
+}
+
+.section-title {
+  color: $h2-color;
+  font-size: 28px;
+  font-weight: $fw-extraBold;
+  padding-top: $h2-padding;
+  margin-bottom: 20px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+
+  &-decor {
+    display: block;
+    margin-bottom: 31px;
+
+    &::after {
+      content: "";
+      width: 90px;
+      height: 1px;
+      background: #000;
+      opacity: 0.1;
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      width: 90px;
+      height: 1px;
+      background: #000;
+      opacity: 0.1;
+      display: block;
+    }
+  }
+
+  &-decor-white {
+    &::after {
+      content: "";
+      background: #fff;
+      opacity: 0.5;
+    }
+
+    &::before {
+      content: "";
+      background: #fff;
+      opacity: 0.5;
+    }
+  }
+}
+
+.icon-heart {
+  color: #000;
+  opacity: 0.2;
+  font-size: 14px;
+  margin: 0 14px;
+
+  &-white {
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.section-subtitle {
+  font-weight: $fw-semiBold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $main-blueColor;
+  max-width: 935px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+}

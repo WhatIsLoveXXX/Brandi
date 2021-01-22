@@ -1,0 +1,14 @@
+@import "variables";
+$container-max-widths: (
+  xl: 1170px,
+) !default;
+$font-family-sans-serif: "Open Sans", sans-serif;
+// $font-weight-base: 300;
+// // $body-color: $body-color-default;
+// $nav-link-font-size: 14px;
+// $navbar-light-color: #a4aead;
+// $navbar-dark-light-color:  #a4aead;
+// $navbar-dark-active-color: $main-color;
+// $navbar-padding-y: 7px;
+// $nav-link-padding-y:                1.55rem;
+$navbar-nav-link-padding-x: 3px;

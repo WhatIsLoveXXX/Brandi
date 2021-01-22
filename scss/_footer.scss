@@ -1,0 +1,148 @@
+.footer {
+  background: $footer-bgColor;
+  padding-bottom: 105px;
+  padding-top: 94px;
+
+  &-wrapper {
+    @include media-breakpoint-down(xl) {
+      padding-left: 15px;
+    }
+
+    &-brand {
+      font-family: $font-pacifico;
+      font-size: 28px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 27px;
+      display: block;
+
+      &-description {
+        font-size: 13px;
+        font-weight: $fw-regular;
+        color: #fff;
+        line-height: 24px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+.subscribe {
+  padding: 15px 15px 0 7px;
+
+  @include media-breakpoint-down(xl) {
+    padding-left: 15px;
+  }
+
+  &-title {
+    font-size: 14px;
+    font-weight: $fw-bold;
+    color: #fff;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 42px;
+  }
+
+  &-description {
+    font-size: 13px;
+    font-weight: $fw-regular;
+    color: #fff;
+    line-height: 24px;
+  }
+}
+
+.footer-form {
+  position: relative;
+
+  &-text {
+    width: 100%;
+    border: 2px solid #fff;
+    outline: none;
+    background: $footer-bgColor;
+    padding: 2px 40px 2px 5px;
+    height: 46px;
+    border-radius: 3px;
+    margin-bottom: 17px;
+    color: #fff;
+  }
+
+  &-submit {
+    width: 18px;
+    height: 13px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    background: url(../../svg/search-arrow.svg);
+    outline: none;
+    border: none;
+  }
+}
+
+.explore {
+  padding: 15px 15px 0 15px;
+
+  &-title {
+    font-size: 14px;
+    font-weight: $fw-bold;
+    color: #fff;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 130px;
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 13px;
+      line-height: 32px;
+      font-weight: $fw-regular;
+      transition: 0.2s ease;
+
+      &:hover {
+        color: $main-blueColor;
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  font-size: 13px;
+  padding: 72px 15px 0 20px;
+
+  &-info {
+    color: #fff;
+    border-left: 1px solid $main-blueColor;
+    margin-bottom: 53px;
+    padding-left: 12px;
+    line-height: 22px;
+  }
+
+  a {
+    color: $main-blueColor;
+    text-decoration: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &-heart {
+    margin: 0 10px 0 6px;
+    opacity: 0.3;
+  }
+
+  &-brandi {
+    padding-left: 12px;
+  }
+}

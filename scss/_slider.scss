@@ -1,0 +1,146 @@
+.slider {
+  margin-top: -70px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 9.6rem;
+  // top: 36.4rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    font-size: 62px;
+    font-weight: $fw-light;
+    margin-bottom: -8px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 48px;
+    }
+
+    span {
+      font-weight: $fw-bold;
+    }
+  }
+
+  p {
+    font-weight: $fw-light;
+    font-size: 48px;
+    margin-bottom: 11px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 34px;
+    }
+
+    span {
+      color: $main-greenColor;
+    }
+  }
+
+  .carousel-description {
+    font-weight: $fw-light;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      background-color: $main-greenColor;
+      width: 28px;
+      height: 1px;
+      display: block;
+      margin-right: 33px;
+    }
+
+    &::after {
+      content: "";
+      background-color: $main-greenColor;
+      width: 28px;
+      height: 1px;
+      display: block;
+      margin-left: 33px;
+    }
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 0;
+  margin-right: 2.5%;
+  margin-left: 15%;
+  list-style: none;
+
+  @include media-breakpoint-down(sm) {
+    transform: translateY(120%);
+  }
+}
+
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-top: inherit;
+  border-bottom: inherit;
+  border: 1px solid #fff;
+  opacity: 0.2;
+  transition: opacity 0.6s ease;
+  margin-bottom: 15px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background: #fff;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  // margin-top: -70px;
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  justify-content: center;
+
+  &-item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 36px;
+    }
+  }
+}
+
+.slider-icon {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
